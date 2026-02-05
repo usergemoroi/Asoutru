@@ -62,3 +62,4 @@ Makefile
 # OS
 .DS_Store
 Thumbs.db
+android-sdk/
