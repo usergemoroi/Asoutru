@@ -1,0 +1,87 @@
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preReleaseBuild UP-TO-DATE
+> Task :app:dataBindingMergeDependencyArtifactsRelease UP-TO-DATE
+> Task :app:generateReleaseResValues UP-TO-DATE
+> Task :app:generateReleaseResources UP-TO-DATE
+> Task :app:mergeReleaseResources UP-TO-DATE
+> Task :app:dataBindingGenBaseClassesRelease UP-TO-DATE
+> Task :app:javaPreCompileRelease UP-TO-DATE
+> Task :app:checkReleaseAarMetadata UP-TO-DATE
+> Task :app:mapReleaseSourceSetPaths UP-TO-DATE
+> Task :app:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksRelease UP-TO-DATE
+> Task :app:processReleaseMainManifest UP-TO-DATE
+> Task :app:processReleaseManifest UP-TO-DATE
+> Task :app:processReleaseManifestForPackage UP-TO-DATE
+> Task :app:processReleaseResources UP-TO-DATE
+> Task :app:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :app:extractProguardFiles UP-TO-DATE
+> Task :app:generateReleaseLintVitalReportModel UP-TO-DATE
+> Task :app:lintVitalAnalyzeRelease UP-TO-DATE
+> Task :app:lintVitalReportRelease UP-TO-DATE
+> Task :app:lintVitalRelease
+> Task :app:configureCMakeRelWithDebInfo[arm64-v8a]
+
+> Task :app:buildCMakeRelWithDebInfo[arm64-v8a]
+C/C++: ninja: Entering directory `/home/engine/project/app/.cxx/RelWithDebInfo/494f42t1/arm64-v8a'
+C/C++: /home/engine/project/src/imgui_impl_android.cpp:44:49: warning: unused variable 'g_LogTag' [-Wunused-variable]
+C/C++: static char                                     g_LogTag[] = "ImGuiExample";
+C/C++:                                                 ^
+C/C++: 1 warning generated.
+C/C++: In file included from /home/engine/project/src/Aimbot.cpp:1:
+C/C++: /home/engine/project/src/Aimbot.h:38:13: warning: private field 'currentTarget' is not used [-Wunused-private-field]
+C/C++:     Player* currentTarget;
+C/C++:             ^
+C/C++: 1 warning generated.
+C/C++: In file included from /home/engine/project/src/Player.cpp:1:
+C/C++: /home/engine/project/src/Player.h:14:15: warning: private field 'instance' is not used [-Wunused-private-field]
+C/C++:     uintptr_t instance;
+C/C++:               ^
+C/C++: /home/engine/project/src/Player.h:38:15: warning: private field 'instance' is not used [-Wunused-private-field]
+C/C++:     uintptr_t instance;
+C/C++:               ^
+C/C++: /home/engine/project/src/Player.h:52:15: warning: private field 'instance' is not used [-Wunused-private-field]
+C/C++:     uintptr_t instance;
+C/C++:               ^
+C/C++: 3 warnings generated.
+C/C++: /home/engine/project/src/GUI.cpp:26:14: warning: unused variable 'io' [-Wunused-variable]
+C/C++:     ImGuiIO& io = ImGui::GetIO();
+C/C++:              ^
+C/C++: 1 warning generated.
+
+> Task :app:configureCMakeRelWithDebInfo[armeabi-v7a]
+
+> Task :app:buildCMakeRelWithDebInfo[armeabi-v7a]
+C/C++: ninja: Entering directory `/home/engine/project/app/.cxx/RelWithDebInfo/494f42t1/armeabi-v7a'
+C/C++: /home/engine/project/src/imgui_impl_android.cpp:44:49: warning: unused variable 'g_LogTag' [-Wunused-variable]
+C/C++: static char                                     g_LogTag[] = "ImGuiExample";
+C/C++:                                                 ^
+C/C++: 1 warning generated.
+C/C++: In file included from /home/engine/project/src/Player.cpp:1:
+C/C++: /home/engine/project/src/Player.h:14:15: warning: private field 'instance' is not used [-Wunused-private-field]
+C/C++:     uintptr_t instance;
+C/C++:               ^
+C/C++: /home/engine/project/src/Player.h:38:15: warning: private field 'instance' is not used [-Wunused-private-field]
+C/C++:     uintptr_t instance;
+C/C++:               ^
+C/C++: /home/engine/project/src/Player.h:52:15: warning: private field 'instance' is not used [-Wunused-private-field]
+C/C++:     uintptr_t instance;
+C/C++:               ^
+C/C++: 3 warnings generated.
+C/C++: In file included from /home/engine/project/src/Aimbot.cpp:1:
+C/C++: /home/engine/project/src/Aimbot.h:38:13: warning: private field 'currentTarget' is not used [-Wunused-private-field]
+C/C++:     Player* currentTarget;
+C/C++:             ^
+C/C++: 1 warning generated.
+C/C++: /home/engine/project/src/GUI.cpp:26:14: warning: unused variable 'io' [-Wunused-variable]
+C/C++:     ImGuiIO& io = ImGui::GetIO();
+C/C++:              ^
+C/C++: 1 warning generated.
+
+> Task :app:mergeReleaseJniLibFolders
+> Task :app:mergeReleaseNativeLibs
+> Task :app:checkReleaseDuplicateClasses
+> Task :app:stripReleaseDebugSymbols
+> Task :app:dexBuilderRelease
+> Task :app:desugarReleaseFileDependencies
+> Task :app:extractReleaseNativeSymbolTables
