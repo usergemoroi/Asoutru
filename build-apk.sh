@@ -3,7 +3,7 @@
 set -e
 
 echo "========================================="
-echo "ViluaOS APK Build Script"
+echo "Visuality APK Build Script"
 echo "========================================="
 
 # Check Java
@@ -30,36 +30,33 @@ echo ""
 echo "Cleaning previous builds..."
 ./gradlew clean
 
-# Build debug APK
+# Build release APK
 echo ""
-echo "Building debug APK..."
-./gradlew assembleDebug
+echo "Building signed release APK..."
+./gradlew assembleRelease
 
 # Check if build was successful
-if [ -f "app/build/outputs/apk/debug/app-debug.apk" ]; then
+if [ -f "app/build/outputs/apk/release/app-release.apk" ]; then
     echo ""
     echo "========================================="
     echo "✓ Build successful!"
     echo "========================================="
     echo ""
-    echo "Debug APK: app/build/outputs/apk/debug/app-debug.apk"
+    echo "Release APK: app/build/outputs/apk/release/app-release.apk"
     
-    # Copy and rename to viluaos.apk
-    cp app/build/outputs/apk/debug/app-debug.apk viluaos.apk
-    echo "Copied to: viluaos.apk"
+    # Copy and rename to visuality.apk
+    cp app/build/outputs/apk/release/app-release.apk visuality.apk
+    echo "Copied to: visuality.apk"
     
     # Show APK info
     echo ""
     echo "APK Information:"
-    ls -lh viluaos.apk
+    ls -lh visuality.apk
     
     echo ""
     echo "========================================="
     echo "Installation:"
-    echo "  adb install viluaos.apk"
-    echo ""
-    echo "Or build release version:"
-    echo "  ./gradlew assembleRelease"
+    echo "  adb install visuality.apk"
     echo "========================================="
 else
     echo ""
